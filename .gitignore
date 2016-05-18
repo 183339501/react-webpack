@@ -1,2 +1,7 @@
 node_modules/
 .idea/
+
+*.hot-update.js
+*.hot-update.json
+build
+.git
