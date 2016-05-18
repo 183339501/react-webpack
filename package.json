@@ -5,6 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
     "dev": "webpack-dev-server --hot --progress --colors",
     "build": "webpack --progress --colors --watch"
   },
@@ -12,10 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "babel-loader": "^6.2.4",
+    "body-parser": "^1.15.1",
     "bootstrap": "^3.3.6",
     "bootstrap-webpack": "0.0.5",
     "css-loader": "^0.23.1",
     "exports-loader": "^0.6.3",
+    "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "imports-loader": "^0.6.5",
@@ -24,6 +27,7 @@
     "less-loader": "^2.2.3",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
+    "showdown": "^1.4.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7"
   },

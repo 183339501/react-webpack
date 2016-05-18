@@ -4,24 +4,12 @@
 import "bootstrap-webpack";
 import React from "react";
 import ReactDOM from "react-dom";
-// const data = require("./src/data.json")
-
-var List = React.createClass({
-    render : function () {
-        return (<ul className="list-group">
-            {this.LiComponent()}
-        </ul>)
-    },
-    LiComponent : function () {
-        var data = [1,2,3,4,5,6,7,8].map(function(v) {
-           return  (<li className="list-group-item" key={v}>
-                <span className="badge">{v}sss</span>
-                {new Date().toString()}
-            </li>)
-        })
-        return data;
-    }
-});
+import CommentBox from "./public/CommentBox";
 
 
-ReactDOM.render(<List />,document.getElementById("appList"));
+var data = [
+    {author: "Pete Hunt", text: "This is one comment"},
+    {author: "Jordan Walke", text: "This is *another* comment"}
+];
+
+ReactDOM.render(<CommentBox url="/api/comments" interVal = {2000}/>,document.getElementById("appList"));

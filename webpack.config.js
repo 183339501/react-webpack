@@ -46,9 +46,9 @@ module.exports = {
         inline: true,
         historyApiFallback: true,
         stats: { colors: true },
-        hot: true
-         /*proxy: {
-         '*': 'http://127.0.0.1:3001',
-         }*/
+        hot: true,
+         proxy: {
+         '/api/*': 'http://127.0.0.1:3001',
+         }
     }
 };

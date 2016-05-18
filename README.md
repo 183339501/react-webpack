@@ -1,5 +1,7 @@
 # react-webpack
-react、webpack、bootstrap app
+react、webpack、bootstrap es6 babel
+
+npm run start
 
 npm run build
 

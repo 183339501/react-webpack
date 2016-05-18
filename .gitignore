@@ -5,3 +5,4 @@ node_modules/
 *.hot-update.json
 build
 .git
+*.log
